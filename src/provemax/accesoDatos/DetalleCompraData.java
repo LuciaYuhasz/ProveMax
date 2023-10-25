@@ -11,5 +11,6 @@ public class DetalleCompraData {
     
     public DetalleCompraData() {
         con = Conexion.getConexion();
+        // esto es una prueba 
     }
 } 
