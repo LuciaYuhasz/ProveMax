@@ -8,7 +8,7 @@ public class Compra {
     private int idCompra;
     private Proveedor proveedor;
     private LocalDate fecha;
-    private String nombreeeeess ; // borrar es una prueba
+   
     
 
     public Compra() {
