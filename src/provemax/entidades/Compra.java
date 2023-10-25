@@ -10,7 +10,15 @@ public class Compra {
     private LocalDate fecha;
 
     public Compra() {
+        
     }
+
+    public Compra(int idCompra, Proveedor proveedor, LocalDate fecha) {
+        this.idCompra = idCompra;
+        this.proveedor = proveedor;
+        this.fecha = fecha;
+    }
+    
 
     public Compra(Proveedor proveedor, LocalDate fecha) {
         this.proveedor = proveedor;
