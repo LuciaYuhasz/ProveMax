@@ -42,11 +42,11 @@ public class CompraData {
                  }
             ps.close();
             
-             
-        
         }catch (SQLException ex){
             JOptionPane.showMessageDialog(null, "Error al acceder a tabla Compra" + ex.getMessage());
+        
         }
+        
    }
         
     

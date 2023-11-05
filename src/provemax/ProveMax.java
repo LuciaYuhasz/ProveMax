@@ -53,7 +53,7 @@ public class ProveMax {
 //        }
 
 
-//       
+
 
 //                 -----trabajamos con PROVEEDOR-----
 
@@ -134,27 +134,44 @@ public class ProveMax {
 //
 //            System.out.println("-------------------------------------------------------------------");
 //        }
+
 //------------------------ Trabajamos con la tabla compra-------------
+//            CompraData com = new CompraData();
+//            ProveedorData proData = new ProveedorData();
+//            Proveedor provEnco = proData.buscarProveedorPorId(16);
+//            Compra nueva = new Compra(provEnco,LocalDate.now(),true);
+////            nueva.setProveedor (prov);
+////            nueva.setFecha(LocalDate.now());
+////            nueva.isEstado();
+//            com.agregarCompra(nueva);
+
+//----------------------TRABAJAMOS CON LA CLASE DETALLECOMPRADATA---------------
+            
+        DetalleCompra detalle = new DetalleCompra();
+        DetalleCompraData detaData = new DetalleCompraData();
+        detaData.modificarPrecioCosto(2, 5, 250000);
+        if (detalle!=null) {
+            System.out.println("Se modifico correctamente el precio costo ");
+            
+        }
+        
 
 
-            CompraData comData = new CompraData();
-            Compra comp = comData.obtenerCompraPorId(1);
-            DetalleCompraData detaCompraData = new DetalleCompraData();
-            detaCompraData.buscarDetallePorCompra(comp).forEach(item->{
-                System.out.println(item.getIdDetalle());
-                System.out.println(item.getCantidad());
-                System.out.println(item.getPrecioCosto());
-                System.out.println(item.getProducto().getNombreProducto());
-                
-            });
-                    
-//            Compra nueva = new Compra(prov, LocalDate.of(2023,11, 5), true);
-//  
-//             com.agregarCompra(nueva);
-//        
-//             
+//        Proveedor prove = new Proveedor(8 , "Niki-Niki", "San Martin 800 ","266548943", true,74556f);
+//        ProveedorData proData = new ProveedorData();
+//       proData.modificarProveedor(prove); // modifico proveedor
 //
+//        if (prove!=null) {
 //
+//            System.out.println("Proveedor modificado correctamente");
+//        }
+//        }
+ 
+
+
+
+
+
 //     Crear una instancia de la clase Compra y configurar sus atributos
 //    Compra compra = new Compra();
 //    compra.setIdCompra(1); // Establece el ID de la compra que deseas buscar detalles
@@ -211,22 +228,6 @@ public class ProveMax {
 //        
 
 
-
-
-//
-//    proData.modificarProveedor (prove);
-//    Proveedor provEncon = proData.buscarProveedorPorNombre("Ribeiro");
-//
-//    System.out.println (provEncon.toString
-//    ());
-//         Proveedor prove = new Proveedor(9, 7234f, "Rey", "Lujan 594", "273211", true);
-//
-//    proData.eliminarProveedorId (
-//
-//    9);
-//    proData.buscarProveedor (
-//
-//7);
     }
 }
     
