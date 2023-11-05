@@ -10,10 +10,6 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author Usuario
- */
 public class Conexion {
     
     

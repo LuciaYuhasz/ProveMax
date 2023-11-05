@@ -9,26 +9,37 @@ public class Producto {
     private String descripcion;
     private double precioActual;
     private int stock;
+    private int stockMinimo;
     private boolean estado; 
 
     public Producto() {
     }
 
-    public Producto(int idProducto, String nombreProducto, String descripcion, double precioActual, int stock, boolean estado) {
+    public Producto(int idProducto, String nombreProducto, String descripcion, double precioActual, int stock, boolean estado,int stockMinimo) {
         this.idProducto = idProducto;
         this.nombreProducto = nombreProducto;
         this.descripcion = descripcion;
         this.precioActual = precioActual;
         this.stock = stock;
         this.estado = estado;
+        this.stockMinimo=stockMinimo;
     }
     
-    public Producto(String nombreProducto, String descripcion, double precioActual, int stock, boolean estado) {
+    public Producto(String nombreProducto, String descripcion, double precioActual, int stock, boolean estado,int stockMinimo) {
         this.nombreProducto = nombreProducto;
         this.descripcion = descripcion;
         this.precioActual = precioActual;
         this.stock = stock;
         this.estado = estado;
+        this.stockMinimo=stockMinimo;
+    }
+
+    public int getStockMinimo() {
+        return stockMinimo;
+    }
+
+    public void setStockMinimo(int stockMinimo) {
+        this.stockMinimo = stockMinimo;
     }
 
     public int getIdProducto() {
@@ -81,7 +92,7 @@ public class Producto {
 
     @Override
     public String toString() {
-        return "Producto : ID:  "+ idProducto+" "+ nombreProducto +" Precio $ "+ precioActual+" Stock "+stock +"  estado: " + estado ;
+        return "Producto : ID:  "+ idProducto+" "+ nombreProducto + " , " +" Precio $ "+ precioActual + " , " + " Stock "+stock +  " , " + "Sock Minimo : " + stockMinimo + " , " +  "  estado: " + estado ;
     }
     
     
