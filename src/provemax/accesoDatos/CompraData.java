@@ -27,7 +27,7 @@ public class CompraData {
     public void agregarCompra(Compra compra){
          
         try {
-            String sql= " INSERT INTO compra (idproveedor, fecha, estado) " 
+            String sql= " INSERT INTO compra (proveedor, fecha, estado) " 
                + " VALUES(?, ?, ?)";
             PreparedStatement ps= con.prepareStatement(sql,Statement.RETURN_GENERATED_KEYS);
             ps.setInt(1,compra.getProveedor().getIdProveedor());
@@ -45,7 +45,9 @@ public class CompraData {
         
         }catch (SQLException ex){
             JOptionPane.showMessageDialog(null, "Error al acceder a tabla Compra" + ex.getMessage());
+            
         }
+        
    }
         
 

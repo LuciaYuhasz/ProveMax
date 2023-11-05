@@ -53,7 +53,7 @@ public class ProveMax {
 
 //       
 
-//                 -----trabajamos con PROVEEDOR-----
+////                 -----trabajamos con PROVEEDOR-----
 //      Proveedor prove = new Proveedor("Naldo", "Rivadavia 400 ","266448943", true,98456f);
 //      ProveedorData proData = new ProveedorData();  //agrego proveedor
 //      proData.guardarProveedor(prove); ProductoData product = new ProductoData();
@@ -67,7 +67,7 @@ public class ProveMax {
 //            System.out.println("-------------------------------------------------------------------");
 //        }
 //      System.out.println("Se agrego el siguiente proveedor  : " + prove.toString());
-        
+//        
 
 //        ProveedorData prove = new ProveedorData();  // busco prov por id
 //        Proveedor proveEnco= prove.buscarProveedorPorId(7);
@@ -132,15 +132,23 @@ public class ProveMax {
 //            System.out.println("-------------------------------------------------------------------");
 //        }
 //------------------------ Trabajamos con la tabla compra-------------
-            CompraData com = new CompraData();
-            Compra nueva = new Compra();
-            nueva.setProveedor(new Proveedor("Easy", "España 234", "2345678" , true, 345678));
-            nueva.setFecha(LocalDate.now());
+//            CompraData com = new CompraData();
+//            Compra nueva = new Compra();
+//            nueva.setProveedor(new Proveedor(1,"Easy", "España 234", "2345678" , true, 345678));
+//            nueva.setFecha(LocalDate.now());
+//
+//        // Llamar al método para agregar la compra
+//        com.agregarCompra(nueva);
+       
+              
+//             Compra nueva= new Compra(1,1,LocalDate.now(),1);
+//             CompraData.agregerCompra(nueva);
+           //  CompraData com = new CompraData();
+            
+         
 
         // Llamar al método para agregar la compra
-        com.agregarCompra(nueva);
-       
-                    
+      //  com.agregarCompra(nueva);
 //            Proveedor prov = new Proveedor();
 //            Compra compra = new Compra(prov, LocalDate.MIN, true);
 //            com.agregarCompra(compra);
@@ -156,7 +164,7 @@ public class ProveMax {
 //            System.out.println(item.getCantidad());
 //            
 //        });
-            
+//            
 
 
 
