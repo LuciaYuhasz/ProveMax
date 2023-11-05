@@ -23,14 +23,13 @@ public class CompraData {
     
     
     public void agregarCompra(Compra compra){
-<<<<<<< HEAD
+
          
-        try {
-            String sql= " INSERT INTO compra (proveedor, fecha, estado) " 
-=======
         
-         String sql= " INSERT INTO compra (idProveedor, fecha, estado) " 
->>>>>>> ba7b411ee79cce824a3c1e74e92bd36883eec005
+            String sql= " INSERT INTO compra (proveedor, fecha, estado) " 
+        
+         
+
                + " VALUES(?, ?, ?)";
         try {
 
@@ -55,7 +54,7 @@ public class CompraData {
             
         }
         
-   }
+        }
         
     
     public Compra obtenerCompraPorId(int id) {
