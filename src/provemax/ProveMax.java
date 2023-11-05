@@ -52,7 +52,7 @@ public class ProveMax {
 // }
 
 
-//       
+
 
 // -----trabajamos con PROVEEDOR-----
 
@@ -131,10 +131,36 @@ public class ProveMax {
 // System.out.println(" Domicilio : " + prove.getDomicilio());
 // System.out.println(" Telefono : " + prove.getTelefono());
 //
+<<<<<<< HEAD
 // System.out.println("-------------------------------------------------------------------");
 // }
-//------------------------ Trabajamos con la tabla compra-------------
+=======
+//            System.out.println("-------------------------------------------------------------------");
+//        }
 
+>>>>>>> e36eb47e31b309228a397322ddc3c49fc2585192
+//------------------------ Trabajamos con la tabla compra-------------
+//            CompraData com = new CompraData();
+//            ProveedorData proData = new ProveedorData();
+//            Proveedor provEnco = proData.buscarProveedorPorId(16);
+//            Compra nueva = new Compra(provEnco,LocalDate.now(),true);
+////            nueva.setProveedor (prov);
+////            nueva.setFecha(LocalDate.now());
+////            nueva.isEstado();
+//            com.agregarCompra(nueva);
+
+//----------------------TRABAJAMOS CON LA CLASE DETALLECOMPRADATA---------------
+            
+        DetalleCompra detalle = new DetalleCompra();
+        DetalleCompraData detaData = new DetalleCompraData();
+        detaData.modificarPrecioCosto(2, 5, 250000);
+        if (detalle!=null) {
+            System.out.println("Se modifico correctamente el precio costo ");
+            
+        }
+        
+
+<<<<<<< HEAD
 //
 // CompraData comData = new CompraData();
 // Compra comp = comData.obtenerCompraPorId(1);
@@ -164,5 +190,81 @@ public class ProveMax {
         // Llamar al método para agregar la compra
         com.agregarCompra(nueva);
     }}
+=======
+
+//        Proveedor prove = new Proveedor(8 , "Niki-Niki", "San Martin 800 ","266548943", true,74556f);
+//        ProveedorData proData = new ProveedorData();
+//       proData.modificarProveedor(prove); // modifico proveedor
+//
+//        if (prove!=null) {
+//
+//            System.out.println("Proveedor modificado correctamente");
+//        }
+//        }
+ 
+
+
+
+
+
+//     Crear una instancia de la clase Compra y configurar sus atributos
+//    Compra compra = new Compra();
+//    compra.setIdCompra(1); // Establece el ID de la compra que deseas buscar detalles
+//    DetalleCompraData detalles = new DetalleCompraData();
+//    detalles.buscarDetallePorCompra(compra);
+//    ArrayList<DetalleCompra> listaDetalles = detalles.buscarDetallePorCompra(compra); 
+//    System.out.println("Número de detalles encontrados: " + listaDetalles.size());
+//    // Puedes iterar a través de 'detalles' para procesar la información, por ejemplo:
+//    for (DetalleCompra detalle :listaDetalles){
+//                System.out.println("ID del detalle: " + detalle.getIdDetalle());
+//                System.out.println("Cantidad: " + detalle.getCantidad());
+//                System.out.println("Precio de costo: " + detalle.getPrecioCosto());
+//                System.out.println("ID del producto: " + detalle.getProducto().getIdProducto());
+//       
+//    }
+//             
+//             
+//             
+//                    
+//            Proveedor prov = new Proveedor();
+//            Compra compra = new Compra(prov, LocalDate.MIN, true);
+//            com.agregarCompra(compra);
+//            System.out.println("id de compra " + compra.getIdCompra());
+//            
+//       CompraData comData = new CompraData();
+//       Compra comp = comData.obtenerCompraPorId(1);
+//        DetalleCompraData detaData = new DetalleCompraData();
+//        detaData.buscarDetallePorCompra(comp).forEach(item -> {
+//            System.out.println(item.getIdDetalle());
+//            System.out.println(item.getProducto());
+//            System.out.println(item.getPrecioCosto());
+//            System.out.println(item.getCantidad());
+//            
+//        });
+//            
+//
+//
+//
+//           CompraData comp = new CompraData();
+//           ProductoData prod = new ProductoData();
+//           ProveedorData prov = new ProveedorData();
+//           
+//          int idCompraDeseada = 1;
+//        Compra compra = comp.obtenerCompraPorId(idCompraDeseada);
+//
+//        if (compra != null) {
+//            System.out.println("Compra encontrada: " + compra);
+//            // Puedes acceder a los datos de la compra y realizar acciones con ellos aquí
+//        } else {
+//            System.out.println("No se encontró ninguna compra con el ID especificado.");
+//        }
+//           
+//           
+//        
+
+
+    }
+}
+>>>>>>> e36eb47e31b309228a397322ddc3c49fc2585192
     
     

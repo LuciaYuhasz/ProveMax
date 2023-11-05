@@ -47,14 +47,19 @@ public class CompraData {
                  }
             ps.close();
             
-             
-        
         }catch (SQLException ex){
             JOptionPane.showMessageDialog(null, "Error al acceder a tabla Compra" + ex.getMessage());
+<<<<<<< HEAD
             
         }
         
         }
+=======
+        
+        }
+        
+   }
+>>>>>>> e36eb47e31b309228a397322ddc3c49fc2585192
         
     
     public Compra obtenerCompraPorId(int id) {
