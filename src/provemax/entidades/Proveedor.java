@@ -9,27 +9,38 @@ private String razonSocial;
 private String domicilio;
 private String telefono;
 private boolean estado;
+private float cuit;
 
     public Proveedor() {
     }
 
-    public Proveedor(int idProveedor, String razonSocial, String domicilio, String telefono, boolean estado) {
+    public Proveedor(int idProveedor, String razonSocial, String domicilio, String telefono, boolean estado,float cuit) {
         this.idProveedor = idProveedor;
         this.razonSocial = razonSocial;
         this.domicilio = domicilio;
         this.telefono = telefono;
         this.estado = estado;
+        this.cuit=cuit;
     }
 
     
    
     
 
-    public Proveedor(String razonSocial, String domicilio, String telefono, boolean estado) {
+    public Proveedor(String razonSocial, String domicilio, String telefono, boolean estado,float cuit) {
         this.razonSocial = razonSocial;
         this.domicilio = domicilio;
         this.telefono = telefono;
         this.estado = estado;
+        this.cuit=cuit;
+    }
+
+    public float getCuit() {
+        return cuit;
+    }
+
+    public void setCuit(float cuit) {
+        this.cuit = cuit;
     }
 
     public int getIdProveedor() {
@@ -71,5 +82,11 @@ private boolean estado;
     public void setEstado(boolean estado) {
         this.estado = estado;
     }
+
+    @Override
+    public String toString() {
+        return  "idProveedor=" + idProveedor + ", razonSocial=" + razonSocial + ", domicilio=" + domicilio + ", telefono=" + telefono + ", estado=" + estado + ", cuit=" + cuit ;
+    }
+    
 
 }
