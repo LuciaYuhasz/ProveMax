@@ -157,14 +157,31 @@ public class ProveMax {
 //           // Proveedor prov =new Proveedor(13,"Easy", "España 234", "2345678" , true, 345678);
 //             Proveedor provEnco = proData.buscarProveedorPorId(1);
 //            Compra nueva = new Compra(provEnco,LocalDate.now(),true);
+
 //// nueva.setProveedor (prov);
 //// nueva.setFecha(LocalDate.now());
 //// nueva.isEstado();
 //
 //        // Llamar al método para agregar la compra
 //        com.agregarCompra(nueva);
-   }}
+  // }}
    
    
    
-      
+    
+////            nueva.setProveedor (prov);
+////            nueva.setFecha(LocalDate.now());
+////            nueva.isEstado();
+//            com.agregarCompra(nueva);
+
+//----------------------TRABAJAMOS CON LA CLASE DETALLECOMPRADATA---------------
+            
+        DetalleCompra detalle = new DetalleCompra();
+        DetalleCompraData detaData = new DetalleCompraData();
+        detaData.modificarPrecioCosto(2, 5, 250000);
+        if (detalle!=null) {
+            System.out.println("Se modifico correctamente el precio costo ");
+            
+        }
+}}
+   
