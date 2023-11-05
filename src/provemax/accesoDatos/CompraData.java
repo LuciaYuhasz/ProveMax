@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package provemax.accesoDatos;
 
 import java.sql.Connection;
@@ -10,8 +6,10 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
 import javax.swing.JOptionPane;
 import provemax.entidades.Compra;
+import provemax.entidades.DetalleCompra;
 import provemax.entidades.Proveedor;
 
 
@@ -25,10 +23,17 @@ public class CompraData {
     
     
     public void agregarCompra(Compra compra){
+<<<<<<< HEAD
          
         try {
             String sql= " INSERT INTO compra (proveedor, fecha, estado) " 
+=======
+        
+         String sql= " INSERT INTO compra (idProveedor, fecha, estado) " 
+>>>>>>> ba7b411ee79cce824a3c1e74e92bd36883eec005
                + " VALUES(?, ?, ?)";
+        try {
+
             PreparedStatement ps= con.prepareStatement(sql,Statement.RETURN_GENERATED_KEYS);
             ps.setInt(1,compra.getProveedor().getIdProveedor());
             ps.setDate(2, java.sql.Date.valueOf(compra.getFecha()));
@@ -42,6 +47,8 @@ public class CompraData {
                 JOptionPane.showMessageDialog(null, "Compra  agregada exitosamente");
                  }
             ps.close();
+            
+             
         
         }catch (SQLException ex){
             JOptionPane.showMessageDialog(null, "Error al acceder a tabla Compra" + ex.getMessage());
@@ -50,19 +57,16 @@ public class CompraData {
         
    }
         
-
-
-    
     
     public Compra obtenerCompraPorId(int id) {
         Compra compra = null;
+
         try {
             String sql = " SELECT * FROM compra WHERE idCompra = ? ";
             PreparedStatement ps = con.prepareStatement(sql);
             ps.setInt(1, id);
             ResultSet rs = ps.executeQuery();
          
-
             if (rs.next()) {
                 compra = new Compra();
                 compra.setIdCompra(id);
@@ -75,5 +79,6 @@ public class CompraData {
             JOptionPane.showMessageDialog(null, "Error al acceder a la tabla" + ex.getMessage());
         }
         return compra;
+       
     }
 }

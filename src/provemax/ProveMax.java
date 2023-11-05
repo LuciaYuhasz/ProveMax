@@ -2,6 +2,8 @@
 package provemax;
 
 import java.time.LocalDate;
+import java.time.Month;
+import java.util.ArrayList;
 import javax.swing.JOptionPane;
 import provemax.accesoDatos.CompraData;
 import provemax.accesoDatos.DetalleCompraData;
@@ -53,8 +55,15 @@ public class ProveMax {
 
 //       
 
+<<<<<<< HEAD
 ////                 -----trabajamos con PROVEEDOR-----
 //      Proveedor prove = new Proveedor("Naldo", "Rivadavia 400 ","266448943", true,98456f);
+=======
+//                 -----trabajamos con PROVEEDOR-----
+
+
+//      Proveedor prove = new Proveedor("Get-Shop", "San Martin 1500 ","266465478", true,823678f);
+>>>>>>> ba7b411ee79cce824a3c1e74e92bd36883eec005
 //      ProveedorData proData = new ProveedorData();  //agrego proveedor
 //      proData.guardarProveedor(prove); ProductoData product = new ProductoData();
 //        for (Producto producto :product.listarProductosDeBaja()) {
@@ -86,17 +95,16 @@ public class ProveMax {
 //        }
 
 
-//        Proveedor prove = new Proveedor(7,"Naldo", "Rivadavia 800 ","266548943", true,98456f);
+//        Proveedor prove = new Proveedor(8 , "Niki-Niki", "San Martin 800 ","266548943", true,74556f);
 //        ProveedorData proData = new ProveedorData();
-//        proData.modificarProveedor(prove); // modifico proveedor
+//       proData.modificarProveedor(prove); // modifico proveedor
 //
 //        if (prove!=null) {
 //
 //            System.out.println("Proveedor modificado correctamente");
-
 //        }
 //        }
-//        
+ 
 
 //           ProveedorData prove = new ProveedorData();
 //           prove.eliminarProveedorId(8);
@@ -104,7 +112,7 @@ public class ProveMax {
 //               System.out.println("El provedor ha sido dado de baja correctamente");
 //           }
            
-//           
+
 //           ProveedorData prove = new ProveedorData();  // ver esta funcion
 //           Proveedor prov = new Proveedor(2, "Easy", "España 234" , "2345678", true, 345678);
 //           prove.eliminarProveedor(prov);
@@ -132,6 +140,7 @@ public class ProveMax {
 //            System.out.println("-------------------------------------------------------------------");
 //        }
 //------------------------ Trabajamos con la tabla compra-------------
+<<<<<<< HEAD
 //            CompraData com = new CompraData();
 //            Compra nueva = new Compra();
 //            nueva.setProveedor(new Proveedor(1,"Easy", "España 234", "2345678" , true, 345678));
@@ -149,11 +158,52 @@ public class ProveMax {
 
         // Llamar al método para agregar la compra
       //  com.agregarCompra(nueva);
+=======
+
+
+            CompraData comData = new CompraData();
+            Compra comp = comData.obtenerCompraPorId(1);
+            DetalleCompraData detaCompraData = new DetalleCompraData();
+            detaCompraData.buscarDetallePorCompra(comp).forEach(item->{
+                System.out.println(item.getIdDetalle());
+                System.out.println(item.getCantidad());
+                System.out.println(item.getPrecioCosto());
+                System.out.println(item.getProducto().getNombreProducto());
+                
+            });
+                    
+//            Compra nueva = new Compra(prov, LocalDate.of(2023,11, 5), true);
+//  
+//             com.agregarCompra(nueva);
+//        
+//             
+//
+//
+//     Crear una instancia de la clase Compra y configurar sus atributos
+//    Compra compra = new Compra();
+//    compra.setIdCompra(1); // Establece el ID de la compra que deseas buscar detalles
+//    DetalleCompraData detalles = new DetalleCompraData();
+//    detalles.buscarDetallePorCompra(compra);
+//    ArrayList<DetalleCompra> listaDetalles = detalles.buscarDetallePorCompra(compra); 
+//    System.out.println("Número de detalles encontrados: " + listaDetalles.size());
+//    // Puedes iterar a través de 'detalles' para procesar la información, por ejemplo:
+//    for (DetalleCompra detalle :listaDetalles){
+//                System.out.println("ID del detalle: " + detalle.getIdDetalle());
+//                System.out.println("Cantidad: " + detalle.getCantidad());
+//                System.out.println("Precio de costo: " + detalle.getPrecioCosto());
+//                System.out.println("ID del producto: " + detalle.getProducto().getIdProducto());
+//       
+//    }
+//             
+//             
+//             
+//                    
+>>>>>>> ba7b411ee79cce824a3c1e74e92bd36883eec005
 //            Proveedor prov = new Proveedor();
 //            Compra compra = new Compra(prov, LocalDate.MIN, true);
 //            com.agregarCompra(compra);
 //            System.out.println("id de compra " + compra.getIdCompra());
-            
+//            
 //       CompraData comData = new CompraData();
 //       Compra comp = comData.obtenerCompraPorId(1);
 //        DetalleCompraData detaData = new DetalleCompraData();
@@ -165,9 +215,15 @@ public class ProveMax {
 //            
 //        });
 //            
+<<<<<<< HEAD
 
 
 
+=======
+//
+//
+//
+>>>>>>> ba7b411ee79cce824a3c1e74e92bd36883eec005
 //           CompraData comp = new CompraData();
 //           ProductoData prod = new ProductoData();
 //           ProveedorData prov = new ProveedorData();
@@ -181,9 +237,9 @@ public class ProveMax {
 //        } else {
 //            System.out.println("No se encontró ninguna compra con el ID especificado.");
 //        }
-           
-           
-        
+//           
+//           
+//        
 
 
 
@@ -204,3 +260,5 @@ public class ProveMax {
 //7);
     }
 }
+    
+    
